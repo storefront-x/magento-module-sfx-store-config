@@ -1,0 +1,9 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:StorefrontX_SfxStoreConfig:etc/config.xsd">
+    <default>
+        <web>
+            <sfx>
+                <sfx_base_url>https://default-sfx-domain.com</sfx_base_url>
+            </sfx>
+        </web>
+    </default>
+</config>
