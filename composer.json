@@ -1,13 +1,14 @@
 {
-  "name": "storefrontx/module-sfx-store-config",
+  "name": "storefront-x/magento-module-sfx-store-config",
   "description": "Magento 2 module for configuration new SFX store config fields in Magento and get their values",
   "type": "magento2-module",
+  "homepage": "https://github.com/storefront-x/magento-module-sfx-store-config",
   "require": {
-    "magento/framework": "*",
-    "magento/module-email": "*"
+    "magento/framework": "^103.0.2",
+    "magento/module-email": "^101.1.2"
   },
   "license": [
-    "Proprietary"
+    "MIT"
   ],
   "autoload": {
     "files": [

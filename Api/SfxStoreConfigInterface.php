@@ -1,10 +1,4 @@
 <?php
-/**
- * SFX Store Config interface
- *
- * Copyright © MageXo, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
 
 namespace StorefrontX\SfxStoreConfig\Api;
 
