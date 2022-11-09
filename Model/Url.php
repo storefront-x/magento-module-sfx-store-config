@@ -18,7 +18,7 @@ use Magento\Framework\Url\RouteParamsResolverFactory;
 use Magento\Framework\Url\QueryParamsResolverInterface;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\Url\RouteParamsPreprocessorInterface;
-use MageXo\SfxStoreConfig\Api\SfxStoreConfigInterface;
+use SfxStoreConfig\Api\SfxStoreConfigInterface;
 use Magento\Framework\ObjectManagerInterface;
 
 /**
@@ -78,7 +78,7 @@ use Magento\Framework\ObjectManagerInterface;
  * CHANGES FROM ORIGINAL
  * Original class is \Magento\Framework\Url.php
  * We created a copy of this class and change the behavior because we need to change URL from Magento native FE to SFX
- * So we created new di.xml definition in module MageXo/EmailURLExtended which uses this class instead of original
+ * So we created new di.xml definition in module StorefrontX/EmailURLExtended which uses this class instead of original
  * and overrides (changes) urlModel for Magento\Email\Model\Template - this change replaces URL in email templates to SFX
  *
  * method getBaseUrl changed - replacing calling getBaseUrl method by calling getSfxUrl method
@@ -194,7 +194,7 @@ class Url extends DataObject implements UrlInterface
     protected $routeParamsPreprocessor;
 
     /**
-     * @var \MageXo\SfxStoreConfig\Api\SfxStoreConfigInterface
+     * @var \SfxStoreConfig\Api\SfxStoreConfigInterface
      */
     protected $sfxStoreConfig;
 
@@ -234,7 +234,7 @@ class Url extends DataObject implements UrlInterface
      * @param \Magento\Framework\Url\QueryParamsResolverInterface $queryParamsResolver
      * @param \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
      * @param \Magento\Framework\Url\RouteParamsPreprocessorInterface $routeParamsPreprocessor
-     * @param \MageXo\SfxStoreConfig\Api\SfxStoreConfigInterface $sfxStoreConfig
+     * @param \SfxStoreConfig\Api\SfxStoreConfigInterface $sfxStoreConfig
      * @param string $scopeType
      * @param array $data
      * @param HostChecker|null $hostChecker
