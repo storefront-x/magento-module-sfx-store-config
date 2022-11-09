@@ -18,7 +18,7 @@ use Magento\Framework\Url\RouteParamsResolverFactory;
 use Magento\Framework\Url\QueryParamsResolverInterface;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\Url\RouteParamsPreprocessorInterface;
-use SfxStoreConfig\Api\SfxStoreConfigInterface;
+use StorefrontX\SfxStoreConfig\Api\SfxStoreConfigInterface;
 use Magento\Framework\ObjectManagerInterface;
 
 /**
@@ -194,7 +194,7 @@ class Url extends DataObject implements UrlInterface
     protected $routeParamsPreprocessor;
 
     /**
-     * @var \SfxStoreConfig\Api\SfxStoreConfigInterface
+     * @var \StorefrontX\SfxStoreConfig\Api\SfxStoreConfigInterface
      */
     protected $sfxStoreConfig;
 
@@ -234,7 +234,7 @@ class Url extends DataObject implements UrlInterface
      * @param \Magento\Framework\Url\QueryParamsResolverInterface $queryParamsResolver
      * @param \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
      * @param \Magento\Framework\Url\RouteParamsPreprocessorInterface $routeParamsPreprocessor
-     * @param \SfxStoreConfig\Api\SfxStoreConfigInterface $sfxStoreConfig
+     * @param \StorefrontX\SfxStoreConfig\Api\SfxStoreConfigInterface $sfxStoreConfig
      * @param string $scopeType
      * @param array $data
      * @param HostChecker|null $hostChecker
