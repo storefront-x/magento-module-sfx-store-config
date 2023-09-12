@@ -22,16 +22,13 @@ class CustomerRegistryPlugin
      *
      * @param CustomerRegistry $subject
      * @param Customer $result
-     * @param string $customerEmail Customers email address
      * @param string|null $websiteId Optional website ID, if not set, will use the current websiteId
-     *
      * @return Customer
      * @throws NoSuchEntityException
      */
     public function afterRetrieveByEmail(
         CustomerRegistry $subject,
         Customer         $result,
-        string           $customerEmail,
         ?string          $websiteId
     ): Customer {
         if ($storeId = $this->storeManager->getStore()->getId()) {
